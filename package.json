@@ -1,0 +1,28 @@
+{
+  "name": "bankofamericascrapercron",
+  "version": "1.0.0",
+  "description": "NodeJS web scraper service to activate BankofAmerica Web Scraper",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/eshaffer321/BankOfAmericaScraper-Cron.git"
+  },
+  "keywords": [
+    "cron",
+    "bankofamerica",
+    "nodejs"
+  ],
+  "author": "Erick Shaffer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eshaffer321/BankOfAmericaScraper-Cron/issues"
+  },
+  "homepage": "https://github.com/eshaffer321/BankOfAmericaScraper-Cron#readme",
+  "dependencies": {
+    "cron": "^1.7.1",
+    "request": "^2.88.0"
+  }
+}
