@@ -41,9 +41,9 @@ new CronJob('00 00 01 * * *', async function() {
 
 // Update date every minute
 new CronJob('0 */1 * * * *', async function() {
-    logger.log('Signaling update date - STARTING');
+    logger.info('Signaling update date - STARTING');
     try {
-        await request('api:80/update-date')
+        await request('api:80/update-date');
         logger.info('Signaling update date - COMPLETE')
     } catch (e) {
         logger.error(e.toString())
