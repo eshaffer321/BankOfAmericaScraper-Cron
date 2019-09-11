@@ -23,6 +23,8 @@
   "homepage": "https://github.com/eshaffer321/BankOfAmericaScraper-Cron#readme",
   "dependencies": {
     "cron": "^1.7.1",
-    "request": "^2.88.0"
+    "request": "^2.88.0",
+    "winston": "^3.2.1",
+    "winston-daily-rotate-file": "^3.10.0"
   }
 }
