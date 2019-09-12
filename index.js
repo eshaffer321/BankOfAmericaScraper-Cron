@@ -17,7 +17,7 @@ let logger = createLogger({
         format.timestamp()
     ),
     defaultMeta: {
-        service: 'boa-spreadsheet-api',
+        service: 'boa-cron',
         timestamp: moment().format()
     },
     transports: [
