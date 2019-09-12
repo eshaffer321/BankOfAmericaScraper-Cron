@@ -32,7 +32,7 @@ const request = require('request');
 new CronJob('00 00 01 * * *', async function() {
     logger.info('Signaling scraper job - STARTING');
     try {
-        await request('cron:5000');
+        await request('http://scraper:5000');
         logger.info('Signaling scraper job - COMPLETE')
     } catch (e) {
         logger.error(e.toString())
@@ -43,7 +43,7 @@ new CronJob('00 00 01 * * *', async function() {
 new CronJob('0 */1 * * * *', async function() {
     logger.info('Signaling update date - STARTING');
     try {
-        await request('api:80/update-date');
+        await request('http://api:80/update-date');
         logger.info('Signaling update date - COMPLETE')
     } catch (e) {
         logger.error(e.toString())
